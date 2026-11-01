@@ -1,0 +1,23 @@
+@font-face { font-family: "Heebo"; src: url("assets/fonts/heebo.ttf") format("truetype"); font-weight: 100 900; font-display: swap; }
+@font-face { font-family: "Frank Ruhl Libre"; src: url("assets/fonts/frank-ruhl-libre.ttf") format("truetype"); font-weight: 300 900; font-display: swap; }
+:root { --text: #423139; --green: #79434f; --green-hover: #60313c; --muted: #76636b; --line: #ebded7; --mint: #f8eeeb; --paper: #fffdfa; --danger: #9b3d36; --danger-bg: #fceceb; --focus: #806025; }
+* { box-sizing: border-box; }
+body { margin: 0; background: var(--mint); color: var(--text); font: 16px/1.8 "Heebo", Arial, sans-serif; }
+.sheet { max-width: 640px; margin: 0 auto; padding: 24px 16px 48px; }
+.eyebrow { margin: 0; color: var(--muted); font-size: 14px; }
+h1, h2 { font-family: "Frank Ruhl Libre", serif; line-height: 1.3; color: var(--green); }
+h1 { font-size: 28px; margin: 4px 0 8px; }
+.lead { color: var(--muted); }
+form, .result { display: grid; gap: 16px; }
+.question { display: grid; gap: 4px; padding: 16px; background: var(--paper); border: 1px solid var(--line); border-radius: 18px; }
+.question span { color: var(--muted); font-size: 14px; }
+textarea { width: 100%; font: inherit; padding: 10px 12px; border: 1px solid #d9bfb9; border-radius: 8px; background: #fff; color: inherit; resize: vertical; }
+.button { display: inline-flex; align-items: center; justify-content: center; min-height: 48px; padding: 10px 20px; border: 1px solid var(--green); border-radius: 8px; background: var(--green); color: var(--paper); font: 600 16px "Heebo", Arial, sans-serif; text-decoration: none; cursor: pointer; }
+.button:hover { background: var(--green-hover); }
+.button.secondary { background: var(--paper); color: var(--green); }
+.actions { display: flex; flex-wrap: wrap; gap: 12px; }
+.actions .button { flex: 1; }
+.result { margin-top: 24px; padding: 16px; background: var(--paper); border: 1px solid var(--line); border-radius: 18px; }
+.result:focus { outline: none; }
+.alert { padding: 12px; border-radius: 8px; background: var(--danger-bg); color: var(--danger); }
+:focus-visible { outline: 3px solid var(--focus); outline-offset: 2px; }
